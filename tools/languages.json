@@ -1,0 +1,92 @@
+[
+    {
+        "lang": "C11 (Clang)",
+        "ext": "c",
+        "advantage": {
+            "time": "N*1",
+            "memory": "N*1"
+        },
+        "comment": "//"
+    },
+    {
+        "lang": "C++20 (Clang)",
+        "ext": "cpp",
+        "advantage": {
+            "time": "N*1",
+            "memory": "N*1"
+        },
+        "comment": "//"
+    },
+    {
+        "lang": "C# 6.0",
+        "ext": "cs",
+        "advantage": {
+            "time": "N*2+1",
+            "memory": "N*2+16"
+        },
+        "comment": "//"
+    },
+    {
+        "lang": "Go",
+        "ext": "go",
+        "advantage": {
+            "time": "N+2",
+            "memory": "N+512"
+        },
+        "comment": "//"
+    },
+    {
+        "lang": "Java 15",
+        "ext": "java",
+        "advantage": {
+            "time": "N*2+1",
+            "memory": "N*2+16"
+        },
+        "comment": "//"
+    },
+    {
+        "lang": "PHP",
+        "ext": "php",
+        "advantage" : {
+            "time": "N*1",
+            "memory": "N+512"
+        },
+        "comment": "//"
+    },
+    {
+        "lang": "Rust 2018",
+        "ext": "rs",
+        "advantage" : {
+            "time": "N",
+            "memory": "N+16"
+        },
+        "comment": "//"
+    },
+    {
+        "lang": "Scala",
+        "ext": "scala",
+        "advantage": {
+            "time": "N*2+1",
+            "memory": "N*2+128"
+        },
+        "comment": "//"
+    },
+    {
+        "lang": "Python 3",
+        "ext": "py",
+        "advantage" : {
+            "time": "N*3+2",
+            "memory": "N*3+32"
+        },
+        "comment": "#"
+    },
+    {
+        "lang": "Swfit",
+        "ext": "swift",
+        "advantage" : {
+            "time": "N*1",
+            "memory": "N+512"
+        },
+        "comment": "#"
+    }
+]
