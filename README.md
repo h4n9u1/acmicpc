@@ -8,13 +8,13 @@ PS<sup>Problem Solving</sup>를 공부하기 위해 백준의 알고리즘 문�
 
 다음과 같은 언어를 사용할 예정이며 대부분의 언어는 현재 시점(2022년 3월)을 기준으로 BOJ에서 제공하는 표준과 버전과 유사하게 환경이 구성되었습니다.
 
-* C (Apple Clang 13.0.0, C11)
-* C++ (Apple Clang 13.0.0, C++17)
+* C (C11)
+* C++ (C++17)
 * C# (6.0.101)
 * Go (1.17.8)
-* Java (Zulu JDK, 15)
-* Javascript (Node.js, 16.14.0)
-* Kotlin (IntelliJ IDEA 2021.3, 1.6.1)
+* Java (15)
+* Javascript (Node.js 16.14.0)
+* Kotlin (1.6.1)
 * Python3 (3.9.10)
 * PHP (8.1.1)
 * Rust 2018 (1.57.0)
