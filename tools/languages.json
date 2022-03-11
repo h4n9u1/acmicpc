@@ -87,6 +87,16 @@
             "time": "N*1",
             "memory": "N+512"
         },
-        "comment": "#"
+        "comment": "//"
+    }
+    ,
+    {
+        "lang": "Kotlin (JVM)",
+        "ext": "kt",
+        "advantage" : {
+            "time": "N*2+1",
+            "memory": "N*2+16"
+        },
+        "comment": "//"
     }
 ]

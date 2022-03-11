@@ -42,7 +42,7 @@ else :
     print(response.status_code)
     sys.exit()
 
-os.mkdirs(dist, exist_ok=True)
+os.makedirs(dist, exist_ok=True)
 
 for lang in langs:
     ext = lang["ext"]
@@ -52,21 +52,33 @@ for lang in langs:
     N = memory
     _memory = eval(lang["advantage"]["memory"])
 
-    N = 0
+    
+
+    # 문제 정보
+    problem_info = f"""
+    {comment} Baekjoon Online Judge
+    {comment} {index} - {title}
+    {comment} {url}
+    {comment}
+    {comment} Timeout: {_timeout} sec
+    {comment} Memory: {_memory} MB
+    {comment}
+    """.replace("    ", "")
+
+    commented_license = ""
+
+    for i in _license:
+        commented_license += f"{comment} {i}"
+
+    problem_info += commented_license
+
+    # 템플릿 파일 읽기
+    with open(f"./template/template.{ext}", "r") as f:
+        template = f.read().replace("{{ PROBLEM_INFO }}",problem_info)
+
+    print(template)
+
+    # N = 0
     with open(os.path.join(dist, f"{index}.{ext}"), "w") as f:
-        if lang["lang"] == "PHP":
-            f.write("<?php\n")
-        f.write(f"{comment} Baekjoon Online Judge\n")
-        f.write(f"{comment} {index} - {title}\n")
-        f.write(f"{comment} {url}\n")
-        f.write(f"{comment}\n")
-        f.write(f"{comment} Timeout: {_timeout} sec\n")
-        f.write(f"{comment} Memory: {_memory} MB\n")
-        f.write(f"{comment}\n")
-
-        for i in _license:
-            f.write(f"{comment} {i}")
-
-        if lang["lang"] == "PHP":
-            f.write("\n\n?>")
+        f.write(template)
 
