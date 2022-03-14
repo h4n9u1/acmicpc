@@ -88,4 +88,4 @@ PS<sup>Problem Solving</sup>를 공부하기 위해 백준의 알고리즘 문�
 * 버전: `Swift version 5.5.3 (swift-5.5.3-RELEASE)`
 
 ## 진행 사항
-* 단계별로 풀어보기: [구글 스프레드 시트](bit.ly/3sHxxDH)
+* 단계별로 풀어보기: [구글 스프레드 시트](https://bit.ly/3sHxxDH)
